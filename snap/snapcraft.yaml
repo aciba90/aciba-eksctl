@@ -13,11 +13,21 @@ confinement: strict
 base: core24
 adopt-info: eksctl
 
+plugs:
+  dot-aws:
+    interface: personal-files
+    read:
+      - $HOME/.aws
+
+environment:
+  HOME: $SNAP_REAL_HOME
+
 apps:
   eksctl:
     command: bin/eksctl
     plugs:
       - network
+      - dot-aws
 
 parts:
   eksctl:
