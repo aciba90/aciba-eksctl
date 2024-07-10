@@ -15,7 +15,7 @@ adopt-info: eksctl
 
 apps:
   eksctl:
-    command: eksctl
+    command: bin/eksctl
     plugs:
       - network
 
@@ -38,17 +38,15 @@ parts:
         craftctl set version="$EKSCTL_TAG+$GIT_REV"
       fi
     override-build: |
-      export GOPATH="$(realpath ../go)"
+      export GOPATH=$(realpath ../go)
+      export GOBIN=$GOPATH/bin
+      export PATH=$GOPATH/bin:$PATH
+
       make install-build-deps build
-      mkdir -p "$SNAPCRAFT_PART_INSTALL/bin"
-      mv eksctl "$SNAPCRAFT_PART_INSTALL/bin"
+      mkdir -p "$CRAFT_PART_INSTALL/bin"
+      cp -v eksctl "$CRAFT_PART_INSTALL/bin"
     build-snaps:
       - go/latest/stable
     build-packages:
-      - g++
-      - gcc
       - git
       - make
-      - time
-    build-environment:
-      - GOBIN: '$SNAPCRAFT_PART_INSTALL/bin'
