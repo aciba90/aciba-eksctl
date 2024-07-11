@@ -1,0 +1,2 @@
+build:
+	snapcraft --verbose

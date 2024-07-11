@@ -4,8 +4,7 @@
   [eksctl]
 </h1>
 
-<p align="center"><b>This is the snap for [eksctl]</b>, <i>“Single-line elevator pitch for your amazing snap”</i>. It works on Ubuntu, Fedora, Debian, and other major Linux
-distributions.</p>
+<p align="center"><b>This is the snap for eksctl</b>, <i>“a simple CLI tool for creating and managing clusters on EKS - Amazon's managed Kubernetes service for EC2”</i>. It works on Ubuntu, Fedora, Debian, and other major Linux distributions.</p>
 
 <!-- Uncomment and modify this when you are provided a build status badge
 <p align="center">
@@ -42,14 +41,14 @@ Snapcrafters ([join us](https://forum.snapcraft.io/t/snapcrafters-reboot/24625))
   - [x] Give the newly created repository a sensible name, like `godzilla` if you're snapping the Godzilla software (*Note: Do not use `snap` in this name.*)
   - [x] Update the description of the repository to `Unofficial snap for [Project]`
   - [ ] Update logos and references to `[Project]` and `[my-snap-name]`
-  - [ ] Create a snap that runs in `devmode`
-  - [ ] Convert the snap to `strict` confinement, or `classic` confinement if it qualifies
-  - [ ] Register the snap in the store, **using the preferred upstream name**
+  - [x] Create a snap that runs in `devmode`
+  - [x] Convert the snap to `strict` confinement, or `classic` confinement if it qualifies
+  - [x] Register the snap in the store, **using the preferred upstream name**
   - [ ] Add a screenshot to this `README.md`
-  - [ ] Add install instructions to this `README.md`
+  - [x] Add install instructions to this `README.md`
   - [ ] Update snap store metadata, icons and screenshots
-  - [ ] Publish the confined snap in the Snap store beta channel
-  - [ ] Update the install instructions in this `README.md`
+  - [x] Publish the confined snap in the Snap store beta channel
+  - [x] Update the install instructions in this `README.md`
   - [ ] Post a call for testing in the Snapcraft Forum ["Snapcrafters" category](https://forum.snapcraft.io/c/snapcrafters/23) - [link]()
   - [ ] Add the Snapcraft store account (snap-advocacy@canonical.com) as a collaborator to your snap in the [Dashboard](https://dashboard.snapcraft.io) and ask a [Snapcrafters admin](https://github.com/orgs/snapcrafters/people?query=%20role%3Aowner) to accept this request
   - [ ] Fix all important issues found during testing
