@@ -1,4 +1,4 @@
-name: eksctl
+name: aciba-eksctl
 summary: a CLI for Amazon EKS
 description: |
   eksctl is a simple CLI tool for creating clusters on EKS - Amazon's new
